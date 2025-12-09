@@ -2,7 +2,7 @@
 
 This repository contains the implemetation of the experiments from:
 
-> W. Romeijnders, N. Van der Laan, and S. Kang, **Benders decomposition with scaled cuts for multistage stochastic mixed-integer programs**, preprint, 2025.
+> W. Romeijnders, N. Van der Laan, and S. Kang, **Benders decomposition with scaled cuts for multistage stochastic mixed-integer programs**, preprint, 2025. [[link]](https://optimization-online.org/?p=26876)
 
 The code is released under the MIT License. If you use this code in your work, please cite the paper above.
 
