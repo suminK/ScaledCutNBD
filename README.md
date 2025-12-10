@@ -8,9 +8,17 @@ The code is released under the MIT License. If you use this code in your work, p
 
 ## Overview
 
-The code implements a Nested Benders Decomposition (NBD) algorithm with **scaled cuts** and parametric outer approximations for solving multistage stochastic mixed-integer programs.
+The code implements a Nested Benders Decomposition (NBD) algorithm with **scaled cuts** and parametric outer approximations for solving multistage stochastic mixed-integer programs. For full problem formulations and theoretical details, please refer to the paper.
 
-For full problem formulations and theoretical details, please refer to the paper.
+An example script for the lot-sizing problem used in the paper is provided in `examples/run_ex_03.jl`. If you only need instance data for testing, refer to `examples/ex_03_data`. The data includes
+- `num_branch`: Vector giving the number of branches at each stage.
+- `num_item`: Vector giving the number of item types at each stage.
+- `demand`: Vector containing realizations of the random demand.
+- `holding_cost`: Vector containing holding costs for all stages and item types.
+- `backlogging_cost`: Vector containing backlog costs for all stages and item types.
+- `fixed_cost`: Vector containing fixed production costs for all item types.
+- `production_capacity`: The production capacity, i.e., $C$.
+- `inventory_capacity`: Vector giving inventory capacity at each stage; this serves as the upper bound on $s_{ni}$ and $b_{ni}$.
 
 ## Quick Setup Guide for Beginners
 
